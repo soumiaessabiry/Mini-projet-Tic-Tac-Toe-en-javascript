@@ -1,0 +1,97 @@
+*{
+  box-sizing: border-box;
+  font-family: cursive;
+}
+body{
+  background: black;
+}
+
+.col{
+  height: 200px;
+  margin: 6px 6px;
+  text-align: center;
+  font-size: 130px;
+  width: 100px;
+  border-radius: 20px;
+
+}
+.bgcase{
+  border: 2px;
+  
+}
+.btns{
+  animation-name: example;
+  animation-duration:2s;
+  animation-iteration-count: infinite;
+  border-radius: 20px;
+
+}
+
+@keyframes example {
+  0%   {background-color:  rgb(255, 115, 0);}
+  25%  {background-color: rgb(198, 106, 106)}
+  50%  {background-color: rgba(255,255,0,0.5)}
+  100% {background-color: rgba(234, 138, 221, 0.789);}
+}
+/* titlt annimation in css */
+
+.fire{
+  margin: 10px auto;
+  width: 100%;
+  font-family: 'Akronim';
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+ 
+
+}
+
+.Blazing {
+
+  color: rgb(255, 115, 0);
+  font-size: 80px; 
+  font-weight: bolder;
+  vertical-align: middle;
+  text-shadow:
+    0 3px 20px rgb(198, 106, 106),
+    0 0 20px red,
+    0 0 10px orange,
+    4px -5px 6px blue,
+    -4px -10px 10px blue,
+    0 -10px 30px blue;
+  animation: 3s Blazing infinite alternate linear;
+}
+
+@keyframes Blazing {
+  0%   { text-shadow: 0 3px 20px red, 0 0 20px red,
+    0 0 10px blue,
+    0 0 0 blue,
+    0 0 5px blue,
+    -2px -5px 5px blue,
+    4px -10px 10px blue; }
+  25%   { text-shadow: 0 3px 20px red, 0 0 30px red,
+    0 0 20px orange,
+    0 0 5px blue,
+    -2px -5px 5px blue,
+    3px -10px 10px blue,
+    -4px -15px 20px blue; }
+  50%   { text-shadow: 0 3px 20px red, 0 0 20px red,
+    0 -5px 10px orange,
+    -2px -5px 5px blue,
+    3px -10px 10px blue,
+    -4px -15px 20px blue,
+    2px -20px 30px rgba(255,255,0,0.5); }
+  75%   { text-shadow: 0 3px 20px red, 0 0 20px red,
+    0 -5px 10px orange,
+    3px -5px 5px blue,
+    -4px -10px 10px blue,
+    2px -20px 30px rgba(255,255,0,0.5),
+    0px -25px 40px rgba(255,255,0,0)}
+  100%   { text-shadow: 0 3px 20px red, 0 0 20px red,
+    0 0 10px orange,
+    0 0 0 blue,
+    0 0 5px blue,
+    -2px -5px 5px blue,
+    4px -10px 10px yellow; }
+}
