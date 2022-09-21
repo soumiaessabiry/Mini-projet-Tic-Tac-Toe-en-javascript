@@ -11,31 +11,35 @@
 </head>
 <body>
    
-    <div class="container  text-danger " >
-        <div class=" dark fire ">
-            <h1 class="Blazing" >Tic Tac Toe</h1>
+    <div class="container  text-danger mt-5 " >
+        
+        <div class="d-flex justify-content-center text-light">
+            <h2 ><strong>player X </strong> :</h2>
+        </div>
+        <div class="d-flex justify-content-center text-light ">
+            <h2><strong>player O </strong> :</h2>
         </div>
         <div class="container-fluid bgcase"> 
             <div class="row">
-                <div class="col  bg-dark"><span>X</span></div>
-                <div class="col  bg-dark"></div>
-                <div class="col  bg-dark"></div>
+                <button class="col  bg-dark  cases" id="case1" onclick="Playtic();" ></button>
+                <button class="col  bg-dark  cases" id="case2" onclick="Playtic();" ></button>
+                <button class="col  bg-dark  cases" id="case3" onclick="Playtic();" ></button>
             </div>
             <div class="row">
-                <div class="col  bg-dark"></div>
-                <div class="col  bg-dark"></div>
-                <div class="col  bg-dark"></div>
+                <button class="col  bg-dark  cases" id="case4" onclick="Playtic();"></button>
+                <button class="col  bg-dark  cases" id="case5" onclick="Playtic();"></button>
+                <button class="col  bg-dark  cases" id="case6" onclick="Playtic();"></button>
             </div>
             <div class="row">
-                <div class="col  bg-dark"></div>
-                <div class="col  bg-dark"></div>
-                <div class="col  bg-dark"></div>
+                <button class="col  bg-dark  cases" id="case7" onclick="Playtic();"></button>
+                <button class="col  bg-dark  cases" id="case8" onclick="Playtic();"></button>
+                <button class="col  bg-dark  cases" id="case9" onclick="Playtic();"></button>
             </div>
-
+            <div class="d-flex justify-content-center fs-1 m-3 ">
+                <button type="submit"  class=" btns p-1 fs-2 px-5 text-light fw-bolder">Restart </button>
+            </div>
         </div>
-        <div class="d-flex justify-content-center fs-1 m-3 ">
-        <button type="submit " class=" btns p-3 fs-1 px-5 text-light fw-bolder">Play new <img src="https://img.icons8.com/external-bearicons-outline-color-bearicons/64/000000/external-start-call-to-action-bearicons-outline-color-bearicons.png"/></button>
-        </div>
+        
 
     </div>
    
