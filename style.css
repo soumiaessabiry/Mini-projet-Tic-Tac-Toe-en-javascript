@@ -1,98 +1,68 @@
-*{
-  box-sizing: border-box;
+html, body{
+  height: 100%;
   font-family: cursive;
 }
+
 body{
-  background: black;
-}
-
-.col{
-  height: 200px;
-  margin: 6px 6px;
-  text-align: center;
-  font-size: 130px;
-  width: 100px;
-  border-radius: 20px;
-  cursor: pointer;
-
-}
-.bgcase{
-  border: 2px;
-  
-}
-.btns{
-  animation-name: example;
-  animation-duration:2s;
-  animation-iteration-count: infinite;
-  border-radius: 20px;
-
-}
-
-@keyframes example {
-  0%   {background-color:  rgb(255, 115, 0);}
-  25%  {background-color: rgb(198, 106, 106)}
-  50%  {background-color: rgba(255,255,0,0.5)}
-  100% {background-color: rgba(234, 138, 221, 0.789);}
-}
-/* titlt annimation in css */
-
-.fire{
-  margin: 10px auto;
-  width: 100%;
-  font-family: 'Akronim';
-  text-align: center;
+  background-image:url(./bgg.jpg);
+  background-image: calc();
   display: flex;
   justify-content: center;
-  margin-top: 20px;
- 
+  align-items: center;
+  font-size: 50px;
+  overflow: hidden;
+
+}
+.card{
+  box-shadow: 15px 15px rgb(21, 225, 252);
+  margin-top: 350px;
+}
+
+
+h1{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: aliceblue;
+  font-size: 260px;
+  font-size: xx-large;
 
 }
 
-.Blazing {
-margin-top: 80px;
-  color: rgb(255, 115, 0);
-  font-size: 80px; 
-  font-weight: bolder;
-  vertical-align: middle;
-  text-shadow:
-    0 3px 20px rgb(198, 106, 106),
-    0 0 20px red,
-    0 0 10px orange,
-    4px -5px 6px blue,
-    -4px -10px 10px blue,
-    0 -10px 30px blue;
-  animation: 3s Blazing infinite alternate linear;
+.cases{
+  /* height: 300px; */
+    /* width: 300px; */
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-template-rows: repeat(3, 1fr);
+  row-gap: 18px;
+  column-gap: 18px;
 }
 
-@keyframes Blazing {
-  0%   { text-shadow: 0 3px 20px red, 0 0 20px red,
-    0 0 10px blue,
-    0 0 0 blue,
-    0 0 5px blue,
-    -2px -5px 5px blue,
-    4px -10px 10px blue; }
-  25%   { text-shadow: 0 3px 20px red, 0 0 30px red,
-    0 0 20px orange,
-    0 0 5px blue,
-    -2px -5px 5px blue,
-    3px -10px 10px blue,
-    -4px -15px 20px blue; }
-  50%   { text-shadow: 0 3px 20px red, 0 0 20px red,
-    0 -5px 10px orange,
-    -2px -5px 5px blue,
-    3px -10px 10px blue,
-    -4px -15px 20px blue,
-    2px -20px 30px rgba(255,255,0,0.5); }
-  75%   { text-shadow: 0 3px 20px red, 0 0 20px red,
-    0 -5px 10px orange,
-    3px -5px 5px blue,
-    -4px -10px 10px blue,
-    2px -20px 30px rgba(255,255,0,0.5),
-    0px -25px 40px rgba(255,255,0,0)}
-  100%   { text-shadow: 0 3px 20px red, 0 0 20px red,
-    0 0 10px orange,
-    0 0 0 blue,
-    0 0 5px blue,
-    -2px -5px 5px blue,
-    4px -10px 10px yellow; }
+.home{
+  display: block;
 }
+.game{
+  opacity:0;
+}
+.cell{
+  border: 5px solid rgb(189, 123, 18);
+  box-shadow: 5px 6px blue;
+  border-radius: 10px;
+  color: chocolate;
+  font-size: 120px;
+  text-align: center;
+  cursor: pointer;
+  background-color: black;
+  height: 200px;
+  /* width: 150px; */
+
+}
+
+
+.cell.winner{
+  background-color: chocolate;
+  color: azure;
+}
+
