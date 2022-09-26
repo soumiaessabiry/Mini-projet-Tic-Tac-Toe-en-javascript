@@ -59,6 +59,9 @@ h1{
   /* width: 150px; */
 
 }
+.winnermess{
+  display: none;
+}
 
 
 .cell.winner{
